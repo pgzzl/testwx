@@ -1,0 +1,14 @@
+<!--pages/viewContent/components/commentView/commentView.wxml-->
+<view class="container">
+<view class="userIconBox">
+    <image src="{{avatarUrl}}" class="userIcon"></image>
+</view>
+<view class="right">
+    <view class="userName">{{user}}</view>
+    <view class="rateBox">打分<view class="rate">{{star}}</view></view>
+    <view class="postTime">发布于{{time}}</view>
+    <view class="content">{{content}}</view>
+    <view class="imgBox"><image src="{{img}}" class="img"></image></view>
+</view>
+</view>
+

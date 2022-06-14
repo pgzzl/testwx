@@ -1,0 +1,64 @@
+/* pages/viewList/component/viewDetail/viewDetail.wxss */
+.scenry{
+    flex-direction: row;
+    height: 82px;
+    width: 100%;
+    left: 11px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(231, 234, 240);
+    border-bottom: 1px solid rgb(231, 234, 240);
+}
+.photo{
+    margin: 8px;
+    position: absolute;
+    width: 64.77px;
+    height: 60px;
+    border-radius: 12px; 
+}
+.mid{
+    margin: 8px;
+    position: absolute;
+    left: 96px;
+    margin-right: 20px;
+}
+.rate{
+    color: rgb(0, 179, 134);
+}
+.location{
+    color: rgb(170, 170, 170);
+    font-size: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+.right{
+    position:relative;
+    left: 58%;
+    width: 40%;
+    height: 62px;
+    flex-direction: row;
+}
+.check{
+    float:right;
+    width: 20px;
+    height: 20px;
+}
+.checkitem{
+    width: 20px;
+    height: 20px;
+}
+.distance{
+    position: absolute;
+    color: rgb(0, 179, 134);
+font-family: Noto Sans SC;
+font-size: 12px;
+font-weight: 700;
+line-height: 13px;
+letter-spacing: 0px;
+bottom: 2px;
+padding-right: 10px;
+right: 10px;
+}

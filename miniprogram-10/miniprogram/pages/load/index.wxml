@@ -1,0 +1,25 @@
+<!--pages/load/index.wxml-->
+<view class="authorize">
+  <block wx:if="{{!hasUserInfo}}">
+  <swiper class="welcomeImage" indicator-dots="true" circular="true" indicator-color="white" indicator-active-color="green" autoplay="true">
+        <swiper-item>
+          <image class="scene" src="../../images/封面风景.PNG"/>
+        </swiper-item>
+        <swiper-item>
+          <image class="scene" src="../../images/封面风景2.PNG"/>
+        </swiper-item>
+        <swiper-item>
+          <image class="scene" src="../../images/封面风景3.PNG"/>
+        </swiper-item>
+      </swiper>
+      <view class="welcomeWord">
+        <text>邻旅</text>
+        <text>享受旅行的每个瞬间</text>
+        <text>寻找身边最美的风景</text>
+      </view>
+      <view>
+        <button wx:if="{{canIUseGetUserProfile}}"bindtap="getUserProfile" class="authorize_button" style="width:590rpx;height:52px;">启程</button><!--这个if和else是兼容新旧版本获取用户信息的-->
+        <button wx:else open-type="getUserInfo" bindgetUserinfo="getUserInfo" class="authorize_button">启程</button>
+      </view>
+      </block>
+</view>

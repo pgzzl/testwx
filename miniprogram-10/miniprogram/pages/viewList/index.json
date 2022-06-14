@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "viewDetail":"./components/viewDetail/viewDetail"
+    },
+    "navigationBarTitleText": "全部景点"
+}

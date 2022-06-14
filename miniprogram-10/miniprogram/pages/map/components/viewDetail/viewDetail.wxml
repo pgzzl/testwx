@@ -1,0 +1,24 @@
+<!--pages/viewList/component/viewDetail/viewDetail.wxml-->
+<view class="scenry">
+    <view class="photobox">
+        <image src="{{photoUrl}}" mode="scaleToFill" class="photo"></image>
+    </view>
+    <view class="mid">
+        <view>{{title}}</view>
+        <view class="rate">{{rate}}</view>
+        <view class="location">{{location}}</view>
+    </view>
+    <view class="right">
+        <view class="check">
+            <image src="{{checkFlag?'./images/标签形状.png':'./images/标签已.png'}}" mode="scaleToFill" class="checkitem" bindtap="changeCheck"></image>
+        </view>
+        <view class="tag">
+        <view wx:for="{{tag}}" wx:key="*this" class="foritem">
+            {{item.tagname}}
+        </view>
+    </view>
+        <view class="distance">
+            距你{{distance}}km
+        </view>
+</view>
+</view>

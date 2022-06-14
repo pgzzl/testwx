@@ -1,0 +1,25 @@
+<!--pages/main/index.wxml-->
+<view>
+<top_menu></top_menu>
+<scroll-view class="scroll_notes" scroll-y="true">
+  <view class="scroll_view">
+    <view class="scroll_view_left">
+      <view class="note_box" wx:for="{{list1}}" wx:key="note_id">
+        <image class="cover_image" src="{{item.note_cover_url}}"mode="widthFix"/>
+        <image class="like_image"  mode="widthFix"/>
+        <view class="text_bgd">
+          <text class="text_title">{{item.note_title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="scroll_view_right">
+      <view class="note_box" wx:for="{{list2}}" wx:key="note_id">
+        <image class="cover_image" src="{{item.note_cover_url}}"mode="widthFix"/>
+        <view class="text_bgd">
+          <text class="text_title">{{item.note_title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+</view>

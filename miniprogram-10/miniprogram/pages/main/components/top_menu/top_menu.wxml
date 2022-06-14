@@ -1,0 +1,10 @@
+<!--pages/main/components/top_menu/top_menu.wxml-->
+<!--pages/top_menu/top_menu.wxml-->
+<view class="first_view">
+  <image src="./images/searchBar.png" class="searchBar" mode="scaleToFill"></image>
+    <image src="./images/path.png" class="path" mode="scaleToFill" bindtap="jumpPageToMap"></image>
+</view>
+<view class="secondTop">
+    <view wx:for="{{secondTitle}}" data-index="{{index}}" wx:key="index" class="{{index==selectIndex?'secondTopItemSelect':'secondTopItem'}}" bindtap="changeIndex">{{item.content}}</view>
+</view>
+

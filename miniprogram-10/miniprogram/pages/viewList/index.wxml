@@ -1,0 +1,13 @@
+<!--pages/viewList/index.wxml-->
+<view class="top">
+    <image src="./images/searchBar.png" class="searchBar" mode="scaleToFill"></image>
+    <image src="./images/path.png" class="path" mode="scaleToFill" bindtap="jumpPageToMap"></image>
+</view>
+
+<view class="secondTop">
+    <view wx:for="{{secondTitle}}" data-index="{{index}}" wx:key="index" class="{{index==selectIndex?'secondTopItemSelect':'secondTopItem'}}" bindtap="changeIndex">{{item.content}}</view>
+</view>
+
+<view class="viewList">
+    <viewDetail wx:for="{{viewList}}" wx:key="index" data-index="{{index}}" landscapename="{{item.landscapename}}" ldspimg="{{item.ldspimg}}" ldspstar="{{item.ldspstar}}" ldsplocation="{{item.ldsplocation}}" tag="{{item.tag}}" ldsplongtitude="{{item.longitude}}" ldsplatitude="{{item.ldsplatitude}}" bindtap="jumpPageToNote"></viewDetail>
+</view>

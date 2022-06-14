@@ -1,0 +1,70 @@
+/* pages/main/index.wxss */
+page{
+  background-color:rgba(255,255,255);
+}
+.scroll_notes{
+  margin-top:5px;
+  background-color:white;
+  width:750rpx;
+  height:600px;
+}
+.scroll_view{
+  background-color:white;
+  width:750rpx;
+  height:auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.scroll_view_left{
+  background-color:white;
+  width:375rpx;
+  height:auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.scroll_view_right{
+  background-color:white;
+  width:375rpx;
+  height:auto;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+.note_box{
+  margin:12rpx;
+  position: relative;
+  width:350rpx;
+  height:auto;
+  border-radius: 5px;
+  box-shadow: 0 0 2rpx gray;
+}
+.cover_image{
+  width:100%;
+}
+.like_image{
+position: absolute;
+top:20rpx;
+right:20rpx;
+}
+.text_bgd{
+  padding-top:8px;
+  padding-left:5px;
+  position: absolute;
+  width:300rpx;
+  height:64px;
+  left:25rpx;
+  bottom:25rpx;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8.154845237731934px);
+}
+.text_title{
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0px;
+text-align: left;
+}

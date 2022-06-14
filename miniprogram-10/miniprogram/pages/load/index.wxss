@@ -1,0 +1,87 @@
+/* pages/load/index.wxss */
+/* pages/load/load.wxss */
+
+.welcomeImage{
+  position: absolute;
+  width: 750rpx;
+  height:754px;
+  top: 0;
+  left: 0;
+  }
+  .scene{
+  position: absolute;
+  width: 750rpx;
+  height:754px;
+  top: 0;
+  left: 0;
+  }
+  .welcomeWord{
+  position: absolute;
+  width: 400rpx;
+  height: 420px;
+  top: 135.87px;
+  left: 80rpx;
+  }
+  .welcomeWord text:nth-child(1){
+  position: absolute;
+  width: 89px;
+  height: 53px;
+  top:0px;
+  right:0;
+  color: rgb(255, 255, 255);
+  font-family: Noto Sans SC;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 8px;
+  text-align: left;
+  }
+  .welcomeWord text:nth-child(2){
+  position: absolute;
+  width: 216px;
+  height: 36px;
+  bottom:36px;
+  left: 0;
+  color: rgb(255, 255, 255);
+  font-family: Noto Sans SC;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+  }
+  .welcomeWord text:nth-child(3){
+    /* 加入我们 即可享受如伙伴一般最优，最特别 */
+  position: absolute;
+  width: 145px;
+  height: 24px;
+  bottom:0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Noto Sans SC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  }
+  .authorize_button{
+    position: absolute;
+    bottom:60px;
+    left:80rpx;
+    background: rgb(2, 218, 151);
+    border-radius: 14px;
+    color: rgb(255, 255, 255);
+    font-family: Noto Sans SC;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .wx-swiper-dots{
+    position: absolute;
+    bottom:200px;
+    left:300rpx;
+  }
+  

@@ -1,0 +1,14 @@
+/* pages/map/index.wxss */
+.container{
+    height: 100vh;
+}
+.map{
+    width: calc(100%);
+    height: calc(100%);
+}
+.floatView{
+    position: fixed;
+    width: calc(95%);
+    bottom: 10px;
+    border-radius: 20px;
+}

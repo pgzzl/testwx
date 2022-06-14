@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="title">
+    搜索
+  </view>
+<button type="primary" bindtap="jumpPageToNote">笔记页</button>
+<button type="warn" bindtap="jumpPageToViewList">景点列表</button>
+<button type="primary" bindtap="jumpPageToViewContent">景点详细页</button>
+<button type="primary" bindtap="jumpPageToMap">景点地图</button>
+</view>
+

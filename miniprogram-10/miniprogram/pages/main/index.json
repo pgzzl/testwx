@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "top_menu":"./components/top_menu/top_menu",
+      "buttom_menu":"../../components/buttom_menu/bottom_menu"
+    },
+    "navigationBarBackgroundColor":"#ffffff",
+    "navigationBarTitleText": "发现好风景",
+    "navigationBarTextStyle": "black"
+}

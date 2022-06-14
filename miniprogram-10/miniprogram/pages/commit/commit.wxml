@@ -1,0 +1,37 @@
+<!--pages/commit/commit.wxml-->
+<!--pages/commit/commit.wxml-->
+<view class="first_view">
+  <button class="cancel" style="width:200rpx"  bindtap="cancel_click">取消</button>
+  <button class="commit" style="width:150rpx" bindtap="commit_click">发布</button>
+</view>
+<view class="second_view">
+  <image class="add_photo_img"src="../../images/添加照片.png"/>
+  <button class="add_photo" style="width:85px"></button>
+</view>
+<view class="third_view">
+<input class="add_title" placeholder="添加一个标题吧~" placeholder-class="aboutTitle" bindinput="titleInput"></input>
+</view>
+<text class="gap_line">———————————————————</text>
+<view class="forth_view">
+  <textarea class="note" placeholder="吃喝玩乐宝藏地都可以用笔记分享哦~" placeholder-class="aboutSend" bindinput="noteInput"></textarea>
+</view>
+<text class="gap_line">———————————————————</text>
+<view class="fifth_view">
+  <text class="connect_scene">关联景点</text>
+  <card landscapename="{{viewContent.landscapename}}" ldspimg="{{viewContent.ldspimg}}" ldspstar="{{viewContent.ldspstar}}" ldsplocation="{{viewContent.ldsplocation}}" tag="{{viewContent.tag}}" ldsplongtitude="{{viewContent.longitude}}" ldsplatitude="{{viewContent.ldsplatitude}}" tag="{{viewContent.tag}}"></card>
+</view>
+<text class="gap_line">———————————————————</text>
+<view class="sixth_view">
+  <text class="connect_word">关联标签让更多人看见</text>
+  <view class="tag_group1">
+    <button class="btn1"  style="background-color:{{color1}}" bindtap="click_btn1">自然风光</button>
+    <button class="btn2" bindtap="click_btn2" style="background-color:{{color2}}">风土人情</button>
+    <button class="btn3" bindtap="click_btn3" style="background-color:{{color3}}">特色美食</button>
+    <button class="btn4" bindtap="click_btn4" style="background-color:{{color4}}">新晋热门</button>
+  </view>
+  <view class="tag_group2">
+    <button class="btn5" bindtap="click_btn5" style="background-color:{{color5}}">青春红旅</button>
+    <button class="btn6" bindtap="click_btn6" style="background-color:{{color6}}">历史遗迹</button>
+  </view>
+</view>
+

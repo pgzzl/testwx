@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "viewDetail":"./components/viewDetail/viewDetail"
+    }
+}

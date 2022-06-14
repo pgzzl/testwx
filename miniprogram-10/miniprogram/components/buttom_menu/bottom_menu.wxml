@@ -1,0 +1,17 @@
+<!--pages/main/components/buttom_menu/bottom_menu.wxml-->
+<!--pages/bottom_menu/bottom_menu.wxml-->
+<view class="bottom_bar">
+  <view class="bottom_items">
+    <image class="bottom_image1" src="{{noteFlag?image_bottom1:image_bottom4}}" bindtap="noteCheck"></image>
+    <text class="bottom_text1">笔记</text>
+  </view>
+  <view class="bottom_items">
+    <image class="bottom_image2" src="{{nearbyFlag?image_bottom2:image_bottom5}}" bindtap="nearbyCheck"></image>
+    <text class="bottom_text2" >周边</text>
+  </view>
+  <view class="bottom_items">
+    <image class="bottom_image3" src="{{myFlag?image_bottom3:image_bottom6}}" bindtap="myCheck"></image>
+    <text class="bottom_text3">我的</text>
+  </view>
+</view>
+

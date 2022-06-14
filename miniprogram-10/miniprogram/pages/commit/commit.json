@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+      "card":"../../components/card/card"
+    },
+    "navigationBarBackgroundColor":"#ffffff",
+    "navigationBarTitleText": "发布笔记",
+    "navigationBarTextStyle": "black"
+}

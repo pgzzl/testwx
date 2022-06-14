@@ -1,0 +1,15 @@
+<!--pages/map/index.wxml-->
+<view class="container">
+<map
+  id="map"
+  subkey="{{key}}"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="14"
+  layer-style="1"
+  class="map"
+></map>
+<view class="floatView">
+<viewDetail ></viewDetail>
+</view>
+</view>

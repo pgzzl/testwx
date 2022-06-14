@@ -1,0 +1,11 @@
+<!--custom-tab-bar/index.wxml-->
+<!--pages/main/components/buttom_menu/bottom_menu.wxml-->
+<!--pages/bottom_menu/bottom_menu.wxml-->
+<view class="bottom_bar">
+    <view class="bottom_item" wx:for="{{list}}" wx:key="index" bind:tap="handleClick" data-index="{{ index }}" data-path="{{ item.pagePath }}">
+<image src="{{ index == selected ? item.selectedPath : item.iconPath }}" mode="aspectFit" class="bar_img" />
+<view class="bar_text">{{ item.text }}</view>
+</view>  
+</view>
+
+

@@ -1,0 +1,31 @@
+<!--pages/my/my.wxml-->
+<view class="top-container">
+  <image class="top-bg" src="{{topBgUrl}}" mode="scaleToFill"></image>
+  <view class="user-info">
+    <image class="userinfo-avatar" src="{{avatarUrl}}" mode="scaleToFill"></image>
+    <view class="userinfo-nickname">{{nickName}}</view>
+  </view>
+
+  <view class="pick-position">
+    <view style="color: #9B9CA2; font-size: small;">我在</view>
+    <picker class="picker" mode="region" bindchange="bindRegionChange" value="region">
+    {{region[1]}}
+      <image src="./images/右箭头.png" mode="scaleToFill" class="pick-position-arrow"></image>
+    </picker>
+  </view>
+</view>
+
+<view class="list">
+  <view wx:for="{{basicItems}}" wx:key="index" data-path="{{item.url}}" data-index="{{item.index}}" bindtap="goPage">
+    <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image class="list-icon" src="{{item.icon}}"></image>
+        <view class="opti">{{item.text}}</view>
+        <view>
+          <image class="list-arrow" src="./images/右箭头.png" mode="scaleToFill" style="width: 16px;height: 16px;align-content:center;"></image>
+        </view>
+      </view>
+
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--components/card/card.wxml-->
+<!--pages/card/card.wxml-->
+<view class="scenry">
+    <view class="photobox">
+        <image src="{{ldspimg}}" mode="widthfix" class="photo"></image>
+    </view>
+    <view class="mid">
+        <view>{{landscapename}}</view>
+        <view class="rate">{{ldspstar}}</view>
+        <view class="location">{{ldsplocation}}</view>
+    </view>
+    <view class="right">
+    <!-- checkFlag收藏标签 -->
+        <view class="check">
+            <image src="{{checkFlag?'./images/标签已.png':'./images/标签形状.png'}}" mode="scaleToFill" class="checkitem" bindtap="changeCheck"></image>
+        </view>
+        <view class="tag">
+          <view class="foritem">
+              {{tag}}
+          </view>
+        </view>
+        <view class="distance">
+            距你{{distance}}km
+        </view>
+  </view>
+</view>
+
+

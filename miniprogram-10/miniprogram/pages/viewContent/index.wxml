@@ -1,0 +1,36 @@
+<!--pages/viewContent/index.wxml-->
+<view class="top">
+    <button open-type="share" class="button-share" style="width: 55px;"><image src="./images/分享.png" class="shareImage" mode="scaleToFill"></image></button>
+    <image src="./images/写笔记.png" class="noteImage" mode="scaleToFill" bindtap="jumpPageToCommit"></image>
+</view>
+<scroll-view class="content" scroll-y="true">
+    <view class="swiperBox">
+    <swiper indicator-dots="true" indicator-active-color="rgb(18,18,18)" indicator-color="rgba(18,18,18,0.4)" class="swiperbody">
+        <block wx:for="{{imgUrl}}" wx:key="index">
+            <swiper-item >
+            <image src="{{item.url}}" mode="scaleToFill" class="swiperItem"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+    </view>
+    <view class="rate">
+       {{viewContent.ldspstar}}
+    </view>
+    <view class="locationBox">
+        <view class="location">{{viewContent.ldsplocation}}</view>
+        <view class="navi" bindtap="jumpPageToMap">
+            <image src="./images/导航.png" mode="scaleToFill" style="width: 25px;height: 21px;"></image>
+            <view class="map">地图</view>
+        </view>
+    </view>
+    <view class="goodNote">
+        <view class="headline">
+            <view class="headline-left">精选笔记（56）</view>
+            <view class="headline-right">查看所有笔记</view>
+            <view><image src="./images/右箭头.png" mode="scaleToFill" style="width: 16px;height: 14px;align-content:center;"></image></view>
+        </view>
+        <view wx:for="{{NoteList}}" wx:key="index" data-index="index" >
+        <commentView user="{{item.user}}" star="{{item.star}}" time="{{item.time}}" avatarUrl="{{item.avatarUrl}}" content="{{item.content}}" bindtap="jumpPageToNote"></commentView>
+        </view>
+    </view>
+</scroll-view>

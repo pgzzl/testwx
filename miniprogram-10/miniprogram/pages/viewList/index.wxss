@@ -1,0 +1,54 @@
+/* pages/viewList/index.wxss */
+.top{
+    flex-direction: column;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.searchBar{
+    height: 37px;
+    width: 80%;
+}
+.path{
+    margin-right: 10px;
+    float:right;
+    height: 31px;
+    width: 31px;
+}
+.secondTop{
+    height: 30px;
+    padding: 5px;
+    border-bottom-width: 20px;
+    border-bottom-color: rgba(0, 0, 0, 0.514);
+}
+.secondTopItem{
+    border-radius: 10px;
+    height: 20px;
+    padding-top: 3px;
+    width: 20%;
+    text-align: center;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+float: left;
+margin-left: 6px;
+margin-right: 10px;
+}
+.secondTopItemSelect{
+    background-color: rgb(2, 218, 151);
+    color: rgb(255,255,255);
+    border-radius: 10px;
+    height: 20px;
+    padding-top: 3px;
+    width: 20%;
+    text-align: center;
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+float: left;
+margin-left: 6px;
+margin-right: 10px;
+}

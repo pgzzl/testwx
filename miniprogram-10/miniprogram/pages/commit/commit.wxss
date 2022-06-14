@@ -1,0 +1,179 @@
+/* pages/commit/commit.wxss */
+
+.first_view{
+position: relative;
+width: 750rpx;
+height:45px;
+left: 0;
+box-shadow: 0 0 2rpx gray;
+}
+.cancel{
+position: absolute;
+height: 35px;
+top:5px;
+left: 0rpx;
+color: rgba(0, 0, 0, 0.7);
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 2px;
+text-align: center;
+background-color:rgb(255,255,255);
+}
+.title{
+position: absolute;
+width: 72px;
+height: 10px;
+top: 9px;
+left: 300rpx;
+color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 17px;
+font-weight: 500;
+letter-spacing: 0px;
+}
+.commit{
+position: absolute;
+height: 35px;
+top: 5px;
+left: 590rpx;
+color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: center;
+border-radius: 30px;
+background-color: rgb(2, 218, 151);
+}
+.second_view{
+margin-top:8px;
+position: relative;
+width: 750rpx;
+height:100px;
+left: 0;
+}
+.add_photo{
+position: absolute;
+width: 85px;
+height: 85px;
+top: 5px;
+left: 22px;
+border-radius: 6px;
+opacity:0;
+}
+.add_photo_img{
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 5px;
+  left: 22px;
+  border-radius: 6px;
+  }
+.third_view{
+  margin-top:10px;
+position: relative;
+width: 750rpx;
+height:20px;
+left: 0;
+}
+.add_title{
+  position: absolute;
+  left:60rpx;
+  width:630rpx;
+}
+.gap_line{
+  color:#a9a9a9;
+  margin-left:60rpx;
+}
+.forth_view{
+  margin-top:10px;
+  margin-left:60rpx;
+  width:630rpx;
+  height:220px;
+}
+.note{
+  height:100%;
+  width:100%;
+}
+.aboutSend{
+color: rgba(196, 196, 196, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+letter-spacing: 0px;
+text-align: center;
+}
+.fifth_view{
+  margin-bottom:22px;
+  width:750rpx;
+  height:100px;
+}
+.connect_scene{
+ margin-left:60rpx;
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: center;
+}
+.sixth_view{
+  width:750rpx;
+}
+.connect_word{
+margin-left:60rpx;
+color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: center;
+}
+.tag_group1{
+  width:750rpx;
+  height: 32.5px;
+  margin-left:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tag_group1 button{
+  height:34px;
+margin-top:5px;
+color: rgba(0, 0, 0);
+font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: center;
+border-radius:16px;
+background-color: rgba(255,255,255);
+}
+.tag_group2{
+  margin-left:0;
+  margin-top:20px;
+  width:375rpx;
+  height: 32.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tag_group2 button{
+  height:34px;
+color: rgba(0, 0, 0);
+font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 17px;
+letter-spacing: 0px;
+text-align: center;
+border-radius:16px;
+background-color: rgba(255,255,255);
+}
